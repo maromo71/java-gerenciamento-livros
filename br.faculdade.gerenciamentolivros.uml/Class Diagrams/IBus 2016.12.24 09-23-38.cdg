@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IBus">
+  <ClassDiagramComponents>
+    <Interface name="IBus" package="br.faculdade.gerenciamentolivros.business" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Methods>
+        <Method name="inserir" returnType="void" visibility="package">
+          <Argument type="T" name="obj"/>
+        </Method>
+        <Method name="alterar" returnType="void" visibility="package">
+          <Argument type="T" name="obj"/>
+        </Method>
+        <Method name="buscar" returnType="T" visibility="package">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="buscar" returnType="T" visibility="package">
+          <Argument type="String" name="chave"/>
+        </Method>
+        <Method name="excluir" returnType="void" visibility="package">
+          <Argument type="T" name="obj"/>
+        </Method>
+        <Method name="listar" returnType="List&lt;T&gt;" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

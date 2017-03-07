@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="br.faculdade.gerenciamentolivros.entities">
+  <ClassDiagramComponents>
+    <Class name="Editora" package="br.faculdade.gerenciamentolivros.entities" visibility="public" xPosition="389.0" yPosition="340.0">
+      <Fields>
+        <Field name="idEditora" type="int" visibility="public"/>
+        <Field name="nomeEditora" type="String" visibility="public"/>
+        <Field name="email" type="String" visibility="public"/>
+        <Field name="foneContato" type="String" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Livro" package="br.faculdade.gerenciamentolivros.entities" visibility="public" xPosition="698.0" yPosition="311.0">
+      <Fields>
+        <Field name="idLivro" type="int" visibility="public"/>
+        <Field name="tituloLivro" type="String" visibility="public"/>
+        <Field name="editora" type="Editora" visibility="public"/>
+        <Field name="dataPublicacao" type="LocalDate" visibility="public"/>
+        <Field name="autor" type="String" visibility="public"/>
+        <Field name="observacoes" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Usuario" package="br.faculdade.gerenciamentolivros.entities" visibility="public" xPosition="79.0" yPosition="340.0">
+      <Fields>
+        <Field name="login" type="String" visibility="public"/>
+        <Field name="senha" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="login"/>
+          <Argument type="String" name="senha"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="EPermitidoAcesso" returnType="boolean" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="editora" source="br.faculdade.gerenciamentolivros.entities.Livro" target="br.faculdade.gerenciamentolivros.entities.Editora" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IBus">
+  <ClassDiagramComponents>
+    <Interface name="IBus" package="br.faculdade.gerenciamentolivros.business" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
